@@ -19,10 +19,10 @@ services:
     container_name: mysql-db
     restart: always
     environment:
-      MYSQL_DATABASE: wiki
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: wikimedia
-      MYSQL_PASSWORD: wikimedia
+      MYSQL_DATABASE: WIKIDB
+      MYSQL_ROOT_PASSWORD: ROOTPASS
+      MYSQL_USER: WIKIUSER
+      MYSQL_PASSWORD: WIKIPASS
     volumes:
       - ./db:/var/lib/mysql
     networks:
